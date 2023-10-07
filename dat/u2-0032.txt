@@ -1,0 +1,43 @@
+seed = 54f7b5924af7c3399084905e2985a157faca1bd98bd261d0533b530b89001c7cd23ad3eac7c56d80007721ba02b83d74
+
+[SIZ]	T	 =       32
+[SIZ]	N	 =       32
+--- Key Generation: ---
+[CLK]	thrc_keygen(32)	   0.117 ms	   0.247 Mcyc
+vk: t[5][512] = 245807708930019
+vk: A_seed = 1527d697df93b7c0a131cb101f33dc44
+SER vk = 3856
+DES vk = 3856
+SER sk = 434560
+DES sk = 434560
+--- Round 1: ---
+[CLK]	thrc_sign_1(32)	   4.670 ms	   9.864 Mcyc
+SER ctrb_1 = 402432
+DES ctrb_1 = 402432
+--- Round 2: ---
+[CLK]	thrc_sign_2(32)	   0.888 ms	   1.875 Mcyc
+SER ctrb_2 = 518144
+DES ctrb_2 = 518144
+--- Round 3: ---
+[CLK]	thrc_sign_3(32)	   2.324 ms	   4.907 Mcyc
+SER ctrb_3 = 401408
+DES ctrb_3 = 401408
+--- Combine: ---
+n2= 306072835648708.562500	B2= 626733896241521.000000	  0.488362
+[CLK]	thrc_combine(1)	   0.296 ms	   0.624 Mcyc
+sig c: = 1bd9b2a41f5e51f6b94e44f1d4dfa64f8f8d4e52d53dab3bded8bf786bbcf9a9
+sig z:[4][512] = 335203500490279
+sig h:[5][512] = 262897355537701
+SER sig = 12707
+thrc_decode_sig: 12706 (12707)
+--- Verify: ---
+n2= 306072835648708.562500	B2= 626733896241521.000000	  0.488362
+Verify OK.
+[CLK]	thrc_verify(1)	   0.234 ms	   0.494 Mcyc
+[SIZ]	|vk|	 =     3856
+[SIZ]	|sk|	 =   434560
+[SIZ]	|sk|/N	 =    13580
+[SIZ]	|sig|	 =    12707
+[SIZ]	|ctrb|	 =   402432 +   518144 +   401408	=   1321984
+[SIZ]	|ctrb|/T =    12576 +    16192 +    12544	=     41312
+
