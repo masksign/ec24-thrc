@@ -13,7 +13,7 @@ This builds an executable named `xtest` that accepts three parameters:
 ```
 Usage: ./xtest |act| T N
 ```
-Here `|act|` is the number of active signers, `T` is the threshold, and `N` is the total number of signers. For signatures to succeed one needs to have `|act| >= T` (this is threshold cryptography) and also `|ACT| <= N` because you you have that many key shares.
+Here `|act|` is the number of active signers, `T` is the threshold, and `N` is the total number of signers. For signatures to succeed one needs to have `|act| >= T` (this is threshold cryptography) and also `|ACT| <= N` because you only have that many key shares.
 
 An example run with 64 signers, threshold of 64, and 64 keys is:
 ```

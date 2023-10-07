@@ -8,7 +8,7 @@ Test: `python3 test_thrc.py <kappa> <|act|> <T> <N>`.
 
 Here `kappa` is the security level { 128, 192, 256}, `|act|` is the number of active signers, `T` is the threshold, and `N` is the total number of signers.
 
-For signatures to succeed one needs to have `|act| >= T` (this is threshold cryptography) and also `|ACT| <= N` because you you have that many key shares.
+For signatures to succeed one needs to have `|act| >= T` (this is threshold cryptography) and also `|ACT| <= N`, because there's only N key shares.
 
 A succesful run with the "default" parameter set prints equivalent:
 ```

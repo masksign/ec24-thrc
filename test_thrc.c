@@ -62,7 +62,7 @@ int test_thrc(int act_sz, int th_t, int th_n)
         act_sz > th_n || th_n > THRC_N_MAX) {
         fprintf(stderr,
                 "Illegal parameters |act|=%d, T=%d, N=%d\n",
-                th_t, th_n, act_sz);
+                act_sz, th_t, th_n);
         return -1;
     }
 
