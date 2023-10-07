@@ -1,6 +1,4 @@
-#   anon_thrc
-
-Copyright (c) 2023 Raccoon Signature Team. See LICENSE.
+#	ec24-thrc
 
 Optimized C Implementation of Threshold Raccoon scheme. Instructions for performance evaluation. See the `thrc-py` subdirectory for the Python implementation.
 
