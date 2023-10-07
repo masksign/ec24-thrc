@@ -1,6 +1,6 @@
 #	Makefile
 
-DIST	?=	anon_thrc
+DIST	?=	ec24-thrc
 XBIN	?=	xtest
 CC		?=	gcc
 CFLAGS	+= 	-Wall -Wextra -Ofast
@@ -34,4 +34,4 @@ clean:	obj-clean
 	cd thrc-py && $(MAKE) clean
 
 dist:	clean
-	cd ..; tar cfvz $(DIST)-.tgz $(DIST)/*
+	cd ..; tar cfvz $(DIST).tgz $(DIST)/*
